@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Person Potrait</title>
+  <link rel="stylesheet" href="./css/semantic.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <div class="ui grid">
+    <div class="three wide column">
+      <div id="person-list" class="ui cards container">
+        <div class="card">
+          <div class="ui center aligned content">
+            <div class="button">
+              <i class="user circle outline icon big"></i>
+            </div>
+            <div class="ui header container">Add Account</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui cards container">
+        <div class="card">
+          <button id="combine" class="ui orange button center">Combine</button>
+        </div>
+        <div class="card">
+          <button id="cleanAll" class="ui orange button">Clean All</button>
+        </div>
+      </div>
+    </div>
+    <div class="twelve wide column">
+      <div class="results-panel-search">
+        <i class="twitter icon big huge blue"></i>
+        <div class="ui search">
+          <input id="input" class="prompt" type="text" placeholder="Please input a name" />
+        </div>
+        <button id="search" class="ui primary button">Search</button>
+        <div id="progress" class="ui right float loader"></div>
+      </div>
+      <div id="container" class="results-panel-charts">
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="src/person-service.js"></script>
+<script src="src/store.js"></script>
+<script src="src/charts.js"></script>
+<script src="src/person.js"></script>
+<script src="app.js"></script>
+</html>
